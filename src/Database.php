@@ -23,7 +23,7 @@ abstract class Database
         $call = '_'.$name;
         if(is_callable([$this,$call])) return call_user_func_array([$this,$call],$arguments);
         else switch ($name){
-            case 'test':return $this->_get(); break;
+            //case 'test':return $this->_get(); break;
             default: throw new \Exception("Fragmency DATABASE class : no method called \"$name\" !");
         }
     }
@@ -157,6 +157,8 @@ abstract class Database
         return $query;
     }
 
+    private function _query(string $query){
 
+    }
 
 }

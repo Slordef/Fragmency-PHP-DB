@@ -8,6 +8,7 @@ namespace Fragmency\Database;
  * @package Fragmency
  *
  * @method static DB table(string $name)
+ * @method static array query(string $query)
  * @method DB where(string $instruction,string $operator = null,$value = null)
  * @method DB limit(int $min,int $max)
  * @method DB orderby(mixed $column,bool $reverse = null)
